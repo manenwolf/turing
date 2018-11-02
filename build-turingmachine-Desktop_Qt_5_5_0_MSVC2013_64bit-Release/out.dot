@@ -1,0 +1,47 @@
+digraph G{
+Q0 
+Q1 
+Q5 
+Q6 
+Q7 
+Q8 
+Q9 
+Q10 
+Q11 
+Q12 
+Q1sQ1 
+Q1sQ2 
+Q1sQ3 
+Q1sQ4 
+Q1sQ5 
+Q9 -> Q0[label="B/B, R"] 
+Q9 -> Q9[label="0/0, L"] 
+Q0 -> Q6[label="0/B, R"] 
+Q8 -> Q9[label="0/0, L"] 
+Q6 -> Q6[label="0/0, R"] 
+Q6 -> Q1[label="1/1, R"] 
+Q5 -> Q7[label="0/0, L"] 
+Q7 -> Q8[label="1/1, L"] 
+Q8 -> Q10[label="B/B, R"] 
+Q10 -> Q11[label="1/B, R"] 
+Q11 -> Q11[label="0/B, R"] 
+Q11 -> Q12[label="1/B, R"] 
+Q1sQ1 -> Q1sQ2[label="0/X, R"] 
+Q1sQ1 -> Q1sQ4[label="1/1, L"] 
+Q1sQ4 -> Q1sQ4[label="X/0, L"] 
+Q1sQ4 -> Q1sQ5[label="1/1, R"] 
+Q1sQ2 -> Q1sQ2[label="0/0, R"] 
+Q1sQ2 -> Q1sQ2[label="1/1, R"] 
+Q1sQ2 -> Q1sQ3[label="B/0, L"] 
+Q1sQ3 -> Q1sQ3[label="1/1, L"] 
+Q1sQ3 -> Q1sQ3[label="0/0, L"] 
+Q1sQ3 -> Q1sQ1[label="X/X, R"] 
+Q1 -> Q1sQ1[label="0/0, N"] 
+Q1 -> Q1sQ1[label="1/1, N"] 
+Q1 -> Q1sQ1[label="X/X, N"] 
+Q1 -> Q1sQ1[label="B/B, N"] 
+Q1sQ5 -> Q5[label="0/0, N"] 
+Q1sQ5 -> Q5[label="1/1, N"] 
+Q1sQ5 -> Q5[label="X/X, N"] 
+Q1sQ5 -> Q5[label="B/B, N"] 
+}
